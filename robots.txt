@@ -1,0 +1,80 @@
+# robots.txt - Woman and Children Safety Website
+# यह फाइल खोज इंजन को बताती है कि वेबसाइट को कैसे crawl करना है
+
+# सभी खोज इंजन bots के लिए नियम
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.php$
+Disallow: /*?
+Disallow: *?replytocom=
+Disallow: /trackback/
+
+# Google Sitemap
+Sitemap: sitemap.xml
+
+# Crawl Delay (milliseconds)
+Crawl-delay: 1
+
+# Request rate (requests per second)
+Request-rate: 1/1s
+
+# Google Bot विशेष नियम
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 0
+
+# Bing Bot विशेष नियम
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Crawl-delay: 1
+
+# Facebook External Hit
+User-agent: facebookexternalhit
+Allow: /
+
+# Twitter Bot
+User-agent: Twitterbot
+Allow: /
+
+# LinkedIn Bot
+User-agent: LinkedInBot
+Allow: /
+
+# Pinterest Bot
+User-agent: Pinterestbot
+Allow: /
+
+# Disable specific bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Comment spam bots को रोकना
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+
+# Dynamic pages को रोकना
+Disallow: /?*
+Disallow: /search?
+Disallow: /filter?
+Disallow: /sort?
+
+# Prevent indexing of duplicate content
+Disallow: /page/
+Disallow: /author/
+Disallow: /category/
